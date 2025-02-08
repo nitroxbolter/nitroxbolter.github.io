@@ -1,42 +1,107 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Novidades da Versão - Exodos</title>
+    <title>Sistemas</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; padding: 0; background-color: #f4f4f4; }
-        .container { max-width: 800px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); }
-        h1, h2 { color: #333; }
-        ul { list-style: none; padding: 0; }
-        ul li { background: #ddd; margin: 5px 0; padding: 10px; border-radius: 5px; }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            color: #fff;
+            background-image: url('URL_DA_IMAGEM_DE_FUNDO'); /* Substitua pela URL da imagem de fundo desejada */
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        header {
+            background-color: #1e1e1e;
+            color: #00f;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #005;
+            color: #fff;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            background-color: #8b4513; /* Marrom claro */
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #a0522d; /* Tom mais claro de marrom */
+        }
+        main {
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 2rem;
+            border-radius: 10px;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        footer {
+            background-color: #1e1e1e;
+            color: #00f;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Novidades da Versão</h1>
-        <h2>Sistema de Raridade</h2>
-        <p>Agora existem 15 níveis de raridade, de "Pouco Comum" até "Trascendente".</p>
-        <h2>Sistema de Crafting</h2>
-        <p>Chance de 5% para criar um item raro. O sistema foi otimizado e conta com uma nova interface.</p>
-        <h2>Sistema de Upgrade</h2>
-        <p>Melhorias de +1 a +15 para equipamentos, aumentando atributos como armadura, defesa e ataque.</p>
-        <h2>Color Frames</h2>
-        <p>Os itens no inventário agora possuem bordas coloridas de acordo com seu preço de mercado.</p>
-        <h2>Shaders</h2>
-        <p>Novos efeitos visuais adicionados ao jogo, configuráveis por script.</p>
-        <h2>Correções</h2>
-        <ul>
-            <li>Ajuste no cálculo de Life & Mana Leech.</li>
-            <li>Correção de erros tipográficos no cliente.</li>
-        </ul>
-        <h2>NPC Autowalk</h2>
-        <p>Implementado NPCs que podem caminhar automaticamente pelas cidades.</p>
-        <h2>Ajustes na Interface</h2>
-        <p>Botões superiores do cliente foram reduzidos para janelas menores.</p>
-        <h2>Tempo de Reutilização Compartilhado</h2>
-        <p>Habilidades como Hellscore e Rage of the Skies agora compartilham cooldown.</p>
-        <p><strong>Essa versão traz diversas melhorias para aprimorar a jogabilidade, corrigir erros e oferecer novas funcionalidades!</strong> 🚀</p>
-    </div>
+    <header>
+        <h1>Sistemas</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Sistema de Raridade</h2>
+            <p>Existem 15 níveis de raridade que podem ser encontrados no jogo, desde pouco comum até transcendente.</p>
+            <h3>Forma de Obter Objetos de Raridade</h3>
+            <p><strong>Loot de Raridade:</strong> Todos os objetos equipáveis obtidos dos monstros têm a possibilidade de receber um prefixo de raridade. O objeto de raridade possui atributos adicionais (os atributos adicionais serão os mesmos que o valor do atributo base, por exemplo: se o objeto tem absorção de fogo e habilidade com espada, o bônus será absorção de fogo e habilidade com espada, não pode ser outro bônus).</p>
+            <h3>Sistema de Crafting</h3>
+            <p><strong>Crafting Melhorado:</strong> Agora há 5% de chance de fabricar um objeto com raridade, incluindo os bônus ao fabricá-lo. O sistema de crafting foi melhorado e corrigido, agora possui páginas e pode incluir muitas mais receitas, sendo separado por tabelas.</p>
+            <h3>Atributos de Raridade</h3>
+            <p>Absorções, Habilidades, Nível Mágico, Dano Elemental, Ataque, Armadura, Defesa, Chance de Acerto...</p>
+        </section>
+        <section>
+            <h2>Sistema de Melhoramento</h2>
+            <p><strong>Sistema de Melhoramento:</strong> Tem de +1 a +15 melhorias nos objetos (rods/wands excluídas), aumentando as estatísticas básicas: Armadura, defesa, chance de acerto e ataque. Runas de nível 1 a nível 4 podem ser obtidas matando Chefes e Chefes Mundiais.</p>
+        </section>
+        <section>
+            <h2>Frames de Cores</h2>
+            <p><strong>Frames de Cores:</strong> Frames coloridos foram adicionados ao inventário e containers de acordo com o preço de mercado dos itens.</p>
+        </section>
+        <section>
+            <h2>Shaders</h2>
+            <p><strong>Shaders:</strong> Shaders foram adicionados ao jogo (não podem ser obtidos (não estão scriptados), mas podem ser configurados para serem obtidos (um script de exemplo está incluído).</p>
+            <p>Corrigiu-se um aviso sobre muitos parâmetros ao compilar (nível, membros, aura, shader, asas).</p>
+            <p>Corrigiu-se um erro tipográfico no aviso de tecla de ligação do lua no cliente (luabindkeys).</p>
+        </section>
+        <section>
+            <h2>NPC Autowalk</h2>
+            <p><strong>NPC Autowalk:</strong> Foi criado um novo NPC que pode caminhar de uma posição a outra e voltar novamente, percorrendo um caminho. Propósitos: Pode ser útil adicionar alguns NPCs com autowalk nas cidades para que se torne mais um jogo de role-playing.</p>
+        </section>
+        <section>
+            <h2>Outras Melhorias</h2>
+            <p><strong>Botões do Cliente:</strong> Os botões do canto superior direito do menu do cliente foram alterados para pequenas janelas (pode ser revertido, basta excluir game_buttons dentro da pasta layout).</p>
+            <p><strong>Life & Mana Leech:</strong> Corrigiu-se o Life & Mana Leech com um percentual mais preciso, dando um bônus ao matar um monstro e somando corretamente um % para cada monstro adicional. Agora funciona corretamente e as poções foram corrigidas com isso.</p>
+            <p><strong>Tempo de Reutilização Compartilhado:</strong> Adicionou-se um tempo de reutilização compartilhado para os respectivos grupos para usar o tempo de reutilização de feitiços (Hellscore e Rage of the Skies / Wrath of Nature e Eternal Winter).</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Minha Wiki. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
