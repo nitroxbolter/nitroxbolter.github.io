@@ -11,15 +11,18 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            background-image: url('URL_DA_IMAGEM_DE_FUNDO'); /* Substitua pela URL da imagem de fundo desejada */
+            background-size: cover;
+            background-attachment: fixed;
         }
         header {
-            background-color: #333;
+            background-color: rgba(0, 0, 0, 0.8);
             color: #fff;
             padding: 1rem;
             text-align: center;
         }
         nav {
-            background-color: #555;
+            background-color: rgba(0, 0, 0, 0.6);
             color: #fff;
             padding: 0.5rem;
             text-align: center;
@@ -28,15 +31,25 @@
             color: #fff;
             margin: 0 1rem;
             text-decoration: none;
+            padding: 0.5rem 1rem;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.4);
         }
         main {
             padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 2rem;
+            border-radius: 10px;
         }
         section {
             margin-bottom: 2rem;
         }
         footer {
-            background-color: #333;
+            background-color: rgba(0, 0, 0, 0.8);
             color: #fff;
             text-align: center;
             padding: 1rem;
@@ -51,22 +64,32 @@
         <h1>Bem-vindo à Minha Wiki</h1>
     </header>
     <nav>
-        <a href="#secao1">Seção 1</a>
-        <a href="#secao2">Seção 2</a>
-        <a href="#secao3">Seção 3</a>
+        <a href="#sistemas">Sistemas</a>
+        <a href="#features">Features</a>
+        <a href="#cliente">Cliente</a>
+        <a href="#suporte">Suporte</a>
+        <a href="#ferramentas">Ferramentas</a>
     </nav>
     <main>
-        <section id="secao1">
-            <h2>Seção 1</h2>
-            <p>Este é o conteúdo da Seção 1. Você pode adicionar qualquer informação que desejar aqui.</p>
+        <section id="sistemas">
+            <h2>Sistemas</h2>
+            <p>Este é o conteúdo da seção Sistemas. Você pode adicionar informações sobre seus sistemas aqui.</p>
         </section>
-        <section id="secao2">
-            <h2>Seção 2</h2>
-            <p>Este é o conteúdo da Seção 2. Você pode adicionar qualquer informação que desejar aqui.</p>
+        <section id="features">
+            <h2>Features</h2>
+            <p>Este é o conteúdo da seção Features. Você pode adicionar informações sobre as funcionalidades aqui.</p>
         </section>
-        <section id="secao3">
-            <h2>Seção 3</h2>
-            <p>Este é o conteúdo da Seção 3. Você pode adicionar qualquer informação que desejar aqui.</p>
+        <section id="cliente">
+            <h2>Cliente</h2>
+            <p>Este é o conteúdo da seção Cliente. Você pode adicionar informações sobre clientes aqui.</p>
+        </section>
+        <section id="suporte">
+            <h2>Suporte</h2>
+            <p>Este é o conteúdo da seção Suporte. Você pode adicionar informações de suporte aqui.</p>
+        </section>
+        <section id="ferramentas">
+            <h2>Ferramentas</h2>
+            <p>Este é o conteúdo da seção Ferramentas. Você pode adicionar informações sobre ferramentas aqui.</p>
         </section>
     </main>
     <footer>
