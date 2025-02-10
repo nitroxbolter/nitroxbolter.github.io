@@ -60,17 +60,36 @@
         table {
             background-color: #fff; /* Fundo branco */
             width: 100%;
-            border-collapse: collapse;
+            border-collapse: collapse; /* Faz com que as bordas das células fiquem juntas */
             margin: 1rem 0;
+            box-sizing: border-box; /* Garantir que o padding e borda sejam incluídos nas dimensões da tabela */
         }
+
         th, td {
             padding: 0.8rem;
             text-align: center;
             border: 1px solid #ddd;
+            box-sizing: border-box; /* Adiciona o box-sizing para garantir o cálculo correto do padding e bordas */
         }
+
         th {
             background-color: #f2f2f2;
+            font-weight: bold; /* Torna o texto mais visível */
         }
+
+        td {
+            background-color: #fafafa; /* Adiciona um fundo suave nas células de dados */
+        }
+
+/* Efeito de hover para melhorar a interação com a tabela */
+        tr:hover {
+            background-color: #f0f0f0;
+        }
+
+        thead {
+        font-size: 1.1rem;
+        }
+
     </style>
 </head>
 <body>
