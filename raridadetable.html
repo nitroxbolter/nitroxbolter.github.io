@@ -3,182 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabela de Raridades e Atributos</title>
+    <title>Sistemas</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            color: #00f; /* Azul */
+            background-image: url('https://miro.medium.com/v2/resize:fit:2560/format:webp/1*YvxAMX2WntRM3HNT2wufAA.jpeg'); /* Substitua pela URL da imagem de fundo desejada */
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        header {
+            background-color: #1e1e1e;
+            color: #00f; /* Azul */
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #005;
+            color: #fff;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            background-color: #8b4513; /* Marrom claro */
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #a0522d; /* Tom mais claro de marrom */
+        }
+        main {
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 2rem;
+            border-radius: 10px;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        footer {
+            background-color: #1e1e1e;
+            color: #00f; /* Azul */
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
         table {
             width: 100%;
             border-collapse: collapse;
-            margin: 20px 0;
+            margin-top: 20px;
         }
         th, td {
-            padding: 8px;
-            border: 1px solid #ddd;
-            text-align: center;
+            padding: 1rem;
+            text-align: left;
+            border: 1px solid #555;
         }
         th {
-            background-color: #f2f2f2;
+            background-color: #333;
+            color: #fff;
         }
-        caption {
-            font-size: 1.5em;
-            margin-bottom: 10px;
+        tr:nth-child(even) {
+            background-color: #444;
+        }
+        tr:hover {
+            background-color: #555;
+        }
+        strong {
+            color: #00f;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Sistemas</h1>
+    </header>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="sistemas.html">Sistemas</a>
+        <a href="features.html">Features</a>
+        <a href="cliente.html">Cliente</a>
+        <a href="suporte.html">Suporte</a>
+        <a href="ferramentas.html">Ferramentas</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Sistema de Raridade</h2>
+            <p>Existem 15 níveis de raridade que podem ser encontrados no jogo, desde pouco comum até transcendente.</p>
+            <h3>Forma de Obter Objetos de Raridade</h3>
+            <p><strong>Loot de Raridade:</strong> Todos os objetos equipáveis obtidos dos monstros têm a possibilidade de receber um prefixo de raridade. O objeto de raridade possui atributos adicionais (os atributos adicionais serão os mesmos que o valor do atributo base, por exemplo: se o objeto tem absorção de fogo e habilidade com espada, o bônus será absorção de fogo e habilidade com espada, não pode ser outro bônus).</p>
+        </section>
 
-    <h1>Tabela de Raridades e Atributos</h1>
+        <!-- Tabela Organizada -->
+        <section>
+            <h2>Atributos de Raridade</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Atributo</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Absorções</td>
+                        <td>Absorção de dano de elementos como fogo, gelo, terra, etc.</td>
+                    </tr>
+                    <tr>
+                        <td>Habilidades</td>
+                        <td>Aumento nas habilidades específicas como espada, machado, etc.</td>
+                    </tr>
+                    <tr>
+                        <td>Nível Mágico</td>
+                        <td>Aumento no poder mágico de um item ou personagem.</td>
+                    </tr>
+                    <tr>
+                        <td>Dano Elemental</td>
+                        <td>Aumento no dano baseado em elementos, como fogo, gelo, etc.</td>
+                    </tr>
+                    <tr>
+                        <td>Ataque</td>
+                        <td>Aumento do dano causado em combate físico.</td>
+                    </tr>
+                    <tr>
+                        <td>Armadura</td>
+                        <td>Aumento na resistência do personagem contra danos físicos.</td>
+                    </tr>
+                    <tr>
+                        <td>Defesa</td>
+                        <td>Aumento na defesa contra ataques de inimigos.</td>
+                    </tr>
+                    <tr>
+                        <td>Chance de Acerto</td>
+                        <td>Aumento nas chances de acerto em ataques.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-    <table>
-        <caption>Raridade e seus Atributos</caption>
-        <thead>
-            <tr>
-                <th>Raridade</th>
-                <th>Absorções</th>
-                <th>Skills</th>
-                <th>Especiais</th>
-                <th>Elementos</th>
-                <th>Bônus Mínimo</th>
-                <th>Bônus Máximo</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-                <td>1</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-                <td>1</td>
-                <td>1</td>
-                <td>2</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-                <td>1</td>
-                <td>1</td>
-                <td>2</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>3</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>3</td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td>1</td>
-                <td>2</td>
-                <td>1</td>
-                <td>1</td>
-                <td>2</td>
-                <td>4</td>
-            </tr>
-            <tr>
-                <td>7</td>
-                <td>1</td>
-                <td>2</td>
-                <td>1</td>
-                <td>1</td>
-                <td>2</td>
-                <td>5</td>
-            </tr>
-            <tr>
-                <td>8</td>
-                <td>1</td>
-                <td>2</td>
-                <td>2</td>
-                <td>1</td>
-                <td>3</td>
-                <td>6</td>
-            </tr>
-            <tr>
-                <td>9</td>
-                <td>2</td>
-                <td>2</td>
-                <td>2</td>
-                <td>1</td>
-                <td>3</td>
-                <td>7</td>
-            </tr>
-            <tr>
-                <td>10</td>
-                <td>2</td>
-                <td>2</td>
-                <td>2</td>
-                <td>1</td>
-                <td>4</td>
-                <td>8</td>
-            </tr>
-            <tr>
-                <td>11</td>
-                <td>2</td>
-                <td>2</td>
-                <td>2</td>
-                <td>1</td>
-                <td>4</td>
-                <td>9</td>
-            </tr>
-            <tr>
-                <td>12</td>
-                <td>2</td>
-                <td>2</td>
-                <td>2</td>
-                <td>1</td>
-                <td>5</td>
-                <td>10</td>
-            </tr>
-            <tr>
-                <td>13</td>
-                <td>2</td>
-                <td>2</td>
-                <td>2</td>
-                <td>1</td>
-                <td>6</td>
-                <td>10</td>
-            </tr>
-            <tr>
-                <td>14</td>
-                <td>3</td>
-                <td>3</td>
-                <td>2</td>
-                <td>1</td>
-                <td>7</td>
-                <td>12</td>
-            </tr>
-            <tr>
-                <td>15</td>
-                <td>3</td>
-                <td>3</td>
-                <td>2</td>
-                <td>1</td>
-                <td>9</td>
-                <td>15</td>
-            </tr>
-        </tbody>
-    </table>
-
+    </main>
+    <footer>
+        <p>&copy; 2025 Minha Wiki. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
